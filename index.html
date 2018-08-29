@@ -1,0 +1,56 @@
+
+<script language="JavaScript1.2">
+<!--
+
+
+function get_password() {
+  orig_pass = prompt("Please enter password","");
+  if (orig_pass!=null && orig_pass!="")
+  password = new Array(orig_pass.length);
+  for(i=0; i<orig_pass.length; i++) {
+    password[i] = orig_pass.charCodeAt(i);
+  }
+  return password;
+}
+
+password = get_password();
+orig = unescape("".concat('o%3AmirentteceamrG%09wmtvGt%20d2%09%20ex0m%3Aethmgpib%3Ai6%09mQx7mtl/lmtpe%3E0f%3B%09ttmxo%20%3Ey%20txm-emp%09%3Aosd%09nmm%3Clitakm%3Bfm-d%7BmmL0lae%23%20m%20um1by%20lk%09omyldrmcumeiunti%28%20mgm%20%',
+'09%3Bclyiranmpmsuegxh1z%25-%224m0b%20%21mk%09ombhdrecm8ar%20ncm-%3Apen%3Atemoompmiaapos%20%09i%3Bs%3Auihp%3Blmbagimhes%3A1t4wb%7D%3B2m%20%3Caemhxe%7B%20g8hsa%3B6m%3Atu-mdxta%3An%3Bzsrm3exmm%3Alpmmkm0%',
+'09t%20dpm0%3Bb%3A%3B%20moo%3Bpmdxoagde%09bu%3Almnmp%7D%3Bmtsndmtmtet%2C%7BoTmm%20o%2Cetrc%23mtaF%20CoetmCfFt%09t%09aml%3Alf%20n%3Cpo%3Aii%20%09%20gme%22t%20iw%2Ccpoensm%09TaeRme%20mr%20ym%3Bem%2C%09fo',
+'m-frxzt%20fctp%3Ami%20p%7D%3Bm8%3B%09tmem%3Ci%7Blms%3Efomr%20rm%23oFcabA1m%20WdfmtCsmenh%09tl%20glwmFmo%09%3Ae%3Bnms%3B%3Doe-2o/mx%20mzmGmm.p-aym2%7Ddeme%09tm%20nms%7Bg%2Ce-1o-sx%20mz%3Aicmopk%09%20lF',
+'%09psCFm%3Ao1%7D%3BmFlm%3Emmm%3B.sml-i1%3Cye/1%09%3Ehm%3E%3B%3Ammode5%3Ebmm%20mmmmy%3B-imimet%22%20ydpd1am%3D%09f%3C%3Egr0irm%22mm0t%3D/sdmo%3Aatesbgbgm%20b.lsmfnlotriwcnom4gnp/gm%20jdn-r%3Di0%22%3AF%',
+'221eh%29mhh%224b-8%3Dmgo%3Cm%3Em6ie%3Cmim0amdmmmmmm%3C%3Egdom%3Em-mmyhbt%3Cl/lmrd%3Bcmmheoptm/mnt%3Ant%20oy%3Bei0maoxomd.%23mmy0iCyihm.mmg%09iwmlt%3A7%22tC2Fm%20/%3Bimitmo7-%20%22%3Cimy%09mmbmr%20/mmv',
+'TmmvtmN%3AmL%3A/mmd%22%3Bmia%3Cimts-%3E'));
+orig = orig.split("");
+
+passnum = orig.length % password.length;
+for(i=orig.length-1; i>=0; i--) {
+
+  passnum--;
+  if (passnum == -1) passnum = password.length - 1;
+  
+  pos1 = i;
+  pos2 = i + password[passnum];
+
+  if (pos2 >= orig.length) continue;
+
+  char1 = orig[pos1];
+  char2 = orig[pos2];
+
+  orig[pos2] = char1;
+  orig[pos1] = char2;
+
+}
+
+orig1 = "";
+for(i=0;i<orig.length;i++) {
+  orig1 = orig1 + orig[i];
+}
+orig1 = orig1.replace(/mmm/g,"\r\n");
+
+document.write(orig1);
+
+//-->
+
+</script>
+<noscript>JavaScript must be enabled in your browse in order to see protected page.</noscript>
